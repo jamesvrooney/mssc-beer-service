@@ -35,7 +35,7 @@ class BeerControllerTest {
         BeerDto beerDto = BeerDto.builder()
                 .beerName("James Beer")
                 .price(new BigDecimal(3.50))
-                .upc(-8l)
+                .upc(8l)
                 .beerStyle(BeerStyle.ALE)
                 .build();
         String beerDtoToJson = objectMapper.writeValueAsString(beerDto);
